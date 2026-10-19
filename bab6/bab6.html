@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Selector CSS</title>
+    <!-- Hubungkan ke file CSS Anda di sini, atau gunakan tag <style> -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Gaya tambahan opsional hanya agar tampilan demo lebih rapi */
+        body { font-family: Arial, sans-serif; margin: 40px; color: #333; background-color: #fafafa; }
+        nav { background: #2E86C1; padding: 15px; margin-bottom: 30px; }
+        .menu { list-style: none; padding: 0; margin: 0; }
+        .menu > li { margin-right: 20px; }
+        section { margin-bottom: 40px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #2E86C1; color: white; }
+        .tombol { display: inline-block; padding: 10px 20px; background: #2E86C1; color: white; text-decoration: none; border-radius: 4px; transition: all 0.2s; border: none; cursor: pointer; }
+        input { padding: 10px; width: 250px; border: 1px solid #ccc; border-radius: 4px; transition: all 0.2s; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. DEMO: nav a & .menu > li -->
+    <nav>
+        <ul class="menu">
+            <li><a href="#artikel">Home</a></li>
+            <li><a href="#tabel">Data Tabel</a></li>
+            <li><a href="#form">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- 2. DEMO: h2::before, h2::after & p.artikel::first-letter -->
+    <section id="artikel">
+        <h2>Artikel Pilihan</h2>
+        <p class="artikel">
+            CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengatur tampilan visual sebuah halaman web. Dengan memahami berbagai jenis selector seperti kombinasi, pseudo-class, dan pseudo-element, Anda dapat membuat desain web yang interaktif, rapi, dan responsif dengan jauh lebih mudah dan efisien.
+        </p>
+    </section>
+
+    <!-- 3. DEMO: tr:nth-child & li:nth-child(3n+1) -->
+    <section id="tabel">
+        <h2>Daftar Anggota & Jadwal</h2>
+        
+        <!-- Efek Zebra Striping pada Tabel -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Peran</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Budi Santoso</td><td>Frontend Developer</td></tr>
+                <tr><td>Siti Aminah</td><td>UI/UX Designer</td></tr>
+                <tr><td>Rian Hidayat</td><td>Project Manager</td></tr>
+                <tr><td>Dewi Lestari</td><td>QA Engineer</td></tr>
+            </tbody>
+        </table>
+
+        <!-- Efek Tebal pada elemen 1, 4, 7... -->
+        <p style="margin-top: 20px;"><strong>Catatan Tugas (Setiap kelipatan 3n+1 akan otomatis tebal):</strong></p>
+        <ul>
+            <li>Tugas 1: Kopi darat tim (Tebal)</li>
+            <li>Tugas 2: Evaluasi mingguan</li>
+            <li>Tugas 3: Update repository</li>
+            <li>Tugas 4: Backup database (Tebal)</li>
+            <li>Tugas 5: Testing fitur baru</li>
+            <li>Tugas 6: Menyusun laporan</li>
+            <li>Tugas 7: Rilis versi reguler (Tebal)</li>
+        </ul>
+    </section>
+
+    <!-- 4. DEMO: .tombol:hover/:active & input:focus -->
+    <section id="form">
+        <h2>Interaksi Pengguna</h2>
+        <div style="margin-bottom: 15px;">
+            <label for="nama">Coba Klik Kolom Ini: </label><br>
+            <input type="text" id="nama" placeholder="Ketik nama Anda di sini...">
+        </div>
+        <div>
+            <button class="tombol">Arahkan & Klik Saya</button>
+        </div>
+    </section>
+
+</body>
+</html>
