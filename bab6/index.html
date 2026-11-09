@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taruna Dev | Software House Sekolah</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            background: #111827;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        .judul {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 35px;
+        }
+
+        .layanan {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #1e293b;
+        }
+
+        th, td {
+            padding: 18px;
+            text-align: center;
+            border: 1px solid #334155;
+        }
+
+        th {
+            background: #0284c7;
+        }
+
+        tr:hover {
+            background: #334155;
+        }
+
+        /* VIDEO SHOWREEL */
+        .video {
+            text-align: center;
+        }
+
+        .video iframe {
+            width: 700px;
+            height: 400px;
+            max-width: 100%;
+            border-radius: 12px;
+            border: 2px solid #38bdf8;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 6px;
+            background: #334155;
+            color: white;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            background: #38bdf8;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0ea5e9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111827;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .video iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h2>TARUNA DEV</h2>
+
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#harga">Harga</a>
+            <a href="#pemesanan">Pesan</a>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="hero" id="beranda">
+        <h1>Selamat Datang di <span>Taruna Dev</span></h1>
+
+        <p>
+            Software House Sekolah yang siap membantu
+            kebutuhan website dan aplikasi digital Anda.
+        </p>
+
+        <a href="#layanan" class="btn">Lihat Layanan</a>
+    </section>
+
+    <!-- LAYANAN -->
+    <section id="layanan">
+        <h2 class="judul">Layanan Kami</h2>
+
+        <div class="layanan">
+
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>
+                    Membuat desain website yang modern,
+                    menarik, dan mudah digunakan.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>
+                    Pembuatan website sekolah, bisnis,
+                    portofolio, dan toko online.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Mobile App</h3>
+                <p>
+                    Membuat desain dan konsep aplikasi
+                    mobile sesuai kebutuhan pengguna.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>UI/UX Design</h3>
+                <p>
+                    Mendesain tampilan aplikasi yang
+                    nyaman, menarik, dan responsif.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PAKET HARGA -->
+    <section id="harga">
+        <h2 class="judul">Paket Harga Layanan</h2>
+
+        <table>
+            <tr>
+                <th>Paket</th>
+                <th>Layanan</th>
+                <th>Harga</th>
+            </tr>
+
+            <tr>
+                <td>Basic</td>
+                <td>Website sederhana 1 halaman</td>
+                <td>Rp150.000</td>
+            </tr>
+
+            <tr>
+                <td>Standard</td>
+                <td>Website profil 5 halaman</td>
+                <td>Rp350.000</td>
+            </tr>
+
+            <tr>
+                <td>Premium</td>
+                <td>Website bisnis dengan fitur tambahan</td>
+                <td>Rp750.000</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- SHOWREEL YOUTUBE -->
+    <section class="video">
+        <h2 class="judul">Showreel Karya Kami</h2>
+
+        <iframe
+            src="https://www.youtube.com/embed/Xf_mSzFzxmg"
+            title="Showreel Taruna Dev"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+
+        <p style="margin-top: 15px; color: #cbd5e1;">
+            Video dokumentasi hasil karya Taruna Dev
+        </p>
+    </section>
+
+    <!-- FORM PEMESANAN -->
+    <section id="pemesanan">
+        <h2 class="judul">Form Pemesanan Jasa</h2>
+
+        <form onsubmit="pesanJasa(event)">
+
+            <input type="text"
+                   id="nama"
+                   placeholder="Nama lengkap"
+                   required>
+
+            <input type="email"
+                   id="email"
+                   placeholder="Email"
+                   required>
+
+            <select id="layananPilihan" required>
+                <option value="">Pilih layanan</option>
+                <option>Web Design</option>
+                <option>Web Development</option>
+                <option>Mobile App</option>
+                <option>UI/UX Design</option>
+            </select>
+
+            <textarea id="deskripsi"
+                      rows="4"
+                      placeholder="Jelaskan kebutuhan Anda..."
+                      required></textarea>
+
+            <button type="submit">Kirim Pemesanan</button>
+
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; 2026 Taruna Dev |
+            Software House Sekolah
+        </p>
+    </footer>
+
+    <script>
+        function pesanJasa(event) {
+            event.preventDefault();
+
+            let nama = document.getElementById("nama").value;
+
+            alert("Terima kasih " + nama +
+                  "! Form pemesanan berhasil diisi.");
+
+            document.querySelector("form").reset();
+        }
+    </script>
+
+</body>
+</html>
+
